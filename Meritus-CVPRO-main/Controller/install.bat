@@ -20,7 +20,7 @@ if /i "%userInput%"=="y" (
     REM call conda install cudnn -y
     call pip install tensorflow~=2.9.0
 
-    call cd %userProfile%\Meritus-CVPRO-main\Meritus-CVPRO-main\Environment_Setup
+    call cd %userProfile%\Meritus-CVPRO-main\Environment_Setup
     
     call pip install -r requirements.txt
 
