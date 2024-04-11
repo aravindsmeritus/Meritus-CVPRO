@@ -1,6 +1,6 @@
 @echo off
 set "userProfile=%USERPROFILE%"
-cd "%userProfile%\Meritus-CVPRO-main\Controller"
+cd "%userProfile%\Meritus-CVPRO-main\Meritus-CVPRO-main\Controller"
 
 call cls
 

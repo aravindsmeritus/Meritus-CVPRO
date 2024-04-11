@@ -1,6 +1,6 @@
 @echo off
 set "userProfile=%USERPROFILE%"
-cd "%userProfile%\Meritus-CVPRO-main\Training_Process"
+cd "%userProfile%\Meritus-CVPRO-main\Meritus-CVPRO-main\Training_Process"
 
 :waitForInput
 set /p userInput="Is your Bot Disconnected from the Application and System? - 'y' or 'n': "

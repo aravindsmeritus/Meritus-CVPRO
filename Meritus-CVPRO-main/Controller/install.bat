@@ -13,7 +13,7 @@ set /p userInput="Do you have a valid Internet Connection? - 'y' or 'n': "
 if /i "%userInput%"=="y" (
     echo Installing dependencies...................
 
-    cd "%userProfile%\Meritus-CVPRO-main\Controller"
+    cd "%userProfile%\Meritus-CVPRO-main\Meritus-CVPRO-main\Controller"
 
     call %userProfile%\miniconda3\envs\cvpro\python.exe -m pip install --upgrade pip
     REM call conda install cudatoolkit -y

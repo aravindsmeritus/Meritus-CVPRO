@@ -10,8 +10,8 @@ echo.
 echo Type 'run_cvpro' to move the Bot around.
 echo Type 'train_cvpro' to train the Bot for Autonomous Process.
 
-doskey my_conda="%userProfile%\Meritus-CVPRO-main\Controller\activate_cvpro.bat"
-doskey install_cvpro="%userProfile%\Meritus-CVPRO-main\Controller\install.bat"
+doskey my_conda="%userProfile%\Meritus-CVPRO-main\Meritus-CVPRO-main\Controller\activate_cvpro.bat"
+doskey install_cvpro="%userProfile%\Meritus-CVPRO-main\Meritus-CVPRO-main\Controller\install.bat"
 doskey launch_server=start cmd /K "cd C:\Program Files\mosquitto && mosquitto -v -c .\mqtt_conf.conf" 
-doskey run_cvpro="%userProfile%\Meritus-CVPRO-main\Controller\test_run.bat"
-doskey train_cvpro="%userProfile%\Meritus-CVPRO-main\Controller\train.bat"                                     
+doskey run_cvpro="%userProfile%\Meritus-CVPRO-main\Meritus-CVPRO-main\Controller\test_run.bat"
+doskey train_cvpro="%userProfile%\Meritus-CVPRO-main\Meritus-CVPRO-main\Controller\train.bat"                                     
