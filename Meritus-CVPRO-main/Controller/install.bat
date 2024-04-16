@@ -29,6 +29,7 @@ if /i "%userInput%"=="y" (
     if errorlevel 1 (
 
         echo Installation failed! Please ensure you have activated the conda environment.
+        echo.
         
     ) else (
     
