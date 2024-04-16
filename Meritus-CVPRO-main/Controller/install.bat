@@ -13,14 +13,14 @@ set /p userInput="Do you have a valid Internet Connection? - 'y' or 'n': "
 if /i "%userInput%"=="y" (
     echo Installing dependencies...................
 
-    cd "%userProfile%\Meritus-CVPRO-main\Meritus-CVPRO-main\Controller"
+    cd "%userProfile%\Meritus-CVPRO-Windows\Meritus-CVPRO-main\Controller"
 
     call %userProfile%\miniconda3\envs\cvpro\python.exe -m pip install --upgrade pip
     REM call conda install cudatoolkit -y
     REM call conda install cudnn -y
     call pip install tensorflow~=2.9.0
 
-    call cd %userProfile%\Meritus-CVPRO-main\Environment_Setup
+    call cd %userProfile%\Meritus-CVPRO-Windows\Meritus-CVPRO-main\Environment_Setup
     
     call pip install -r requirements.txt
 
