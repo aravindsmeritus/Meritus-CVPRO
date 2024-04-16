@@ -28,7 +28,12 @@ if /i "%userInput%"=="y" (
     
     if errorlevel 1 (
 
-        echo Installation failed! Please ensure you have activated the conda environment.
+        echo Installation failed! 
+        echo Check for the following:
+        echo.
+        echo 1. Please ensure your Internet Connectivity is Stable.
+        echo 2. Please ensure you have activated the 'cvpro' Environment.
+        echo 3. Please ensure you have followed the execution steps in the order given.
         echo.
         
     ) else (
