@@ -1,6 +1,17 @@
 @echo off
 set "userProfile=%USERPROFILE%"
+set mosquittoProfile= C:\Program Files
 
+echo.
+echo Pre-Requisites:
+echo ---------------
+echo 1. Download the Meritus-CVPRO from https://github.com/robotixdevteam/Meritus-CVPRO/tree/Windows and extract the same to %USERPROFILE%
+echo 2. Miniconda should be installed in %USERPROFILE%
+echo 3. Mosquitto should be installed in %mosquittoProfile%
+echo. 
+
+echo Hirearchy of Execution:
+echo -----------------------
 echo Type 'my_conda' - Create or Activate the Conda Environment
 echo Type 'install_cvpro' - Installation of required libraries
 echo.

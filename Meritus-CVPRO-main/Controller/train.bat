@@ -2,6 +2,8 @@
 set "userProfile=%USERPROFILE%"
 cd "%userProfile%\Meritus-CVPRO-Windows\Meritus-CVPRO-main\Training_Process"
 
+call cls
+
 :waitForInput
 set /p userInput="Is your Bot Disconnected from the Application and System? - 'y' or 'n': "
 if /i "%userInput%"=="y" (
