@@ -49,7 +49,7 @@ echo ""
 
 echo "Please enter your Password for deleting the Garbage Files, that are not required for Training Process."
 #sudo find . -name '.DS_Store' -type f -delete
-sudo find . -type f \( -name '.DS_Store' -o -name '.gitkeep' \) -delete
+sudo find . -type f \( -name '.DS_Store' -o -name 'gitkeep' \) -delete
 echo""
 echo "Garbage Files are Deleted"
 echo""
