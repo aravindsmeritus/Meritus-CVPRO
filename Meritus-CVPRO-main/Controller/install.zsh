@@ -73,6 +73,7 @@ main() {
         echo "${BLUE}Please do have a valid Internet Connection for the Installation Process.${NC}"
     else
         echo "${RED}Invalid command. Please enter '${BLUE}y${RED}' or '${BLUE}n${RED}'.${NC}"
+        echo ""
         main
     fi
 }

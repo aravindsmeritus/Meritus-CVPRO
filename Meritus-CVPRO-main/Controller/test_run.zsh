@@ -13,6 +13,8 @@ cd "$userProfile"
 
 clear
 
+main(){
+
 echo "Enter your choice - '${BLUE}control${NC}' or '${BLUE}videostream${NC}': "
 read userInput
 
@@ -26,8 +28,10 @@ run_bot() {
             break
         elif [[ "$userInput" == "n" ]]; then
             echo "${BLUE}Please connect the bot with your Application!${NC}"
+            return 1
         else
             echo "${BLUE}Invalid command. Please enter 'y' or 'n'.${NC}"
+            echo ""
         fi
     done
     python "$script"
@@ -41,4 +45,8 @@ elif [[ "$userInput" == "videostream" ]]; then
     run_bot "videostream_control_bot.py"
 else
     echo "${RED}Invalid choice. Please enter '${BLUE}control${RED}' or '${BLUE}videostream${RED}'.${NC}"
+    echo ""
+    main
 fi
+}
+main

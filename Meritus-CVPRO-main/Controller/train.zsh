@@ -25,6 +25,7 @@ while true; do
         return 1
     else
         echo "${RED}Invalid command. Please enter '${BLUE}y${RED}' or '${BLUE}n${RED}'.${NC}"
+        echo ""
     fi
 done
 
@@ -45,6 +46,13 @@ read learningRate
 learningRate="${learningRate:-0.0001}"
 echo -e "${BLUE}My Learning Rate:${NC} $learningRate"
 echo ""
+
+echo "Please enter your Password for deleting the Garbage Files, that are not required for Training Process."
+#sudo find . -name '.DS_Store' -type f -delete
+sudo find . -type f \( -name '.DS_Store' -o -name '.gitkeep' \) -delete
+echo""
+echo "Garbage Files are Deleted"
+echo""
 
 python main.py -b "$batchSize" -e "$epochValue" -lr "$learningRate"
 
