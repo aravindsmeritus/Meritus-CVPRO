@@ -62,15 +62,15 @@ main() {
                     echo "${BLUE}For Data Collection Process:${NC}"
                     echo "----------------------------"
                     echo ""
-                    echo "1. Please Disconnect the Internet, and connect the Bot with the System. Ensure the Connected IPv4 Address is: 192.168.4.2"
-                    echo "2. Type 'launch_server' to Launch the MQTT Server to run the Bot!"
-                    echo "3. Type 'run_cvpro' to begin the Data Collection Process!"
+                    echo "1. Please Disconnect the Internet, and connect the Bot with the System. Ensure the Connected IPv4 Address is: ${BLUE}192.168.4.2${NC}"
+                    echo "2. Type '${BLUE}launch_server${NC}' to Launch the MQTT Server to run the Bot!"
+                    echo "3. Type '${BLUE}run_cvpro${NC}' to begin the Data Collection Process!"
                     echo ""
                     echo "${BLUE}For Training Process:${NC}"
                     echo "---------------------"
                     echo ""
                     echo "1. Ensure your Bot is disconnected from the System as well as the Application."
-                    echo "2. Type 'train_cvpro' to begin the Training Process!"
+                    echo "2. Type '${BLUE}train_cvpro${NC}' to begin the Training Process!"
                     echo ""
                     
                     return 1
@@ -93,6 +93,7 @@ main() {
                 fi
             else
                 echo "${RED}Invalid command. Please enter '${BLUE}build${RED}' or '${BLUE}activate${RED}' or '${BLUE}deactivate${RED}'.${NC}"
+                echo ""
             fi
         else
             echo "${RED}Attempt failed. Retrying...${NC}"
